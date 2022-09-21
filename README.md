@@ -1,6 +1,6 @@
 # Bienvenido al Torneo Deportivo
 
-![Imagen Deportiva](Img/Liga.png)
+![Imagen Deportiva](Img/fut.jpg)
 
 <hr>
 
