@@ -1,0 +1,37 @@
+﻿@page
+@model Frontend.Pages.CEscenario.DetailsModel
+@{
+    ViewData["Title"]= "Detalles Escenario";
+}
+
+<h2>Detalles Escenario</h2>
+<div class="form-horizontal">
+    <hr/>
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+
+                <div class="form-group">
+                    <label asp-for="Escenario.Espectadores" class="control-label"> </label>
+                    <input asp-for="Escenario.Espectadores" class="form-control" readonly />                    
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Escenario.Nombre" class="control-label"> </label>
+                    <input asp-for="Escenario.Nombre" class="form-control" readonly/>                    
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Escenario.Tipo" class="control-label"> </label>
+                    <input asp-for="Escenario.Tipo" class="form-control" readonly />                    
+                </div>
+
+                
+                <div class="form-group">
+                    <a asp-page="Index" class="btn btn-info">Inicio</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

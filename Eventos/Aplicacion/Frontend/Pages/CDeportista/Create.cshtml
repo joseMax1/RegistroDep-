@@ -1,0 +1,90 @@
+﻿@page
+@model Frontend.Pages.CDeportista.CreateModel
+@{
+    ViewData["Title"]="Crear Deportista";
+}
+
+<h2>Adicionar Deportista</h2>
+<h3 class="text-danger">@ViewData["Error"]</h3>
+
+<div class="form-horizontal">
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Nombre" class="control-label"> </label>
+                    <input asp-for="Deportista.Nombre" class="form-control" />
+                    <span asp-validation-for="Deportista.Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Documento" class="control-label"> </label>
+                    <input asp-for="Deportista.Documento" class="form-control" />
+                    <span asp-validation-for="Deportista.Documento" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Apellidos" class="control-label"> </label>
+                    <input asp-for="Deportista.Apellidos" class="form-control" />
+                    <span asp-validation-for="Deportista.Apellidos" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Genero" class="control-label"> </label>
+                    <input asp-for="Deportista.Genero" class="form-control" />
+                    <span asp-validation-for="Deportista.Genero" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Modalidad" class="control-label"> </label>
+                    <input asp-for="Deportista.Modalidad" class="form-control" />
+                    <span asp-validation-for="Deportista.Modalidad" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.FechaNacimiento" class="control-label"></label>
+                    <input asp-for="Deportista.FechaNacimiento" class="form-control"/>
+                    <span asp-validation-for="Deportista.FechaNacimiento" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Rh" class="control-label"> </label>
+                    <input asp-for="Deportista.Rh" class="form-control" />
+                    <span asp-validation-for="Deportista.Rh" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.EPS" class="control-label"> </label>
+                    <input asp-for="Deportista.EPS" class="form-control" />
+                    <span asp-validation-for="Deportista.EPS" class="text-danger"></span>
+                </div>
+
+                 <div class="form-group">
+                    <label asp-for="Deportista.Celular" class="control-label"> </label>
+                    <input asp-for="Deportista.Celular" class="form-control" />
+                    <span asp-validation-for="Deportista.Celular" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Deportista.Correo" class="control-label"> </label>
+                    <input asp-for="Deportista.Correo" class="form-control" />
+                    <span asp-validation-for="Deportista.Correo" class="text-danger"></span>
+                </div>
+<br/>
+                <div class="form-group">
+                    <input type="submit" value="Crear"  class="btn btn-success"/>
+                    <a asp-page="Index" class="btn btn-info">Cancelar </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+

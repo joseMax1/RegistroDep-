@@ -1,0 +1,42 @@
+﻿@page
+@model Frontend.Pages.CUnidadDeportiva.IndexModel
+@{
+    ViewData["Title"]= "Index Unidad De Patrocinador";
+}
+
+<h1>Listado  De Unidades Deportivas</h1>
+<p>
+    <a asp-page="Create" class="btn btn-success"> Crear Nueva Unidad Deportiva</a>
+</p>
+
+        <table class="table">
+            <thead>
+
+                <tr>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Escenario</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var uni in Model.UnidadDeportivaView)
+                    {
+                        <tr> 
+                           <td>@uni.Nombre</td>
+                           <td>@uni.Direccion</td>
+                           <td>@uni.Escenario</td>
+
+                    <td>
+                        <a asp-page="./Edit" class="btn btn-primary" asp-route-id="@uni.Id">Edit</a>
+                        <a asp-page="./Details" class="btn btn-warning" asp-route-id="@uni.Id">Details</a>
+                        <a asp-page="./Delete" class="btn btn-danger" asp-route-id="@uni.Id">Delete</a>
+                    </td>
+
+                        </tr>
+                    }
+
+            </tbody>
+
+
+        
+        </table> 
