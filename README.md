@@ -13,6 +13,10 @@ Cada Equipo Jugara En un Escenario Y Una Ciudad Diferente Los invito  A Particip
 
 - Carlos Adolfo Benitez Lozano ->[Github](https://github.com/CarlosBNTZ)
  <hr>
+ 
+ # Vistas
+ ![Vistas](https://user-images.githubusercontent.com/104041676/191743676-a8dd9b58-f020-4438-a7a8-e3977b64197f.png)
+ 
 
 
 |Categoria Cadete|Categoria Juvenil|Categoria Senior  |
