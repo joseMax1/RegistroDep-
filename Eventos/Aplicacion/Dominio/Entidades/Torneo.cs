@@ -49,19 +49,12 @@ namespace Dominio
         public int MunicipioId {get;set;}
 
 
-        //propiedad navigacional para la relacion con UnidadDeportiva
-       //   public List<UnidadDeportiva> UnidadDeportivas { get; set; }
+       
 
         //relacion con TorneoEquipo
         public List<TorneoEquipo> TorneoEquipos {get;set;}
 
-
-        //Relacion con Arbitro
-        
-      //public int ArbitroId{get;set;}
-     // public List<Arbitro> Arbitros{get;set;}
-
-
+ 
 
        // Relacion con patrocinador
       public int PatrocinadorId {get;set;}
